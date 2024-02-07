@@ -1,0 +1,47 @@
+.menu {
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin: 18px 0 17px 0;
+    &__item {
+        display: inline-block;
+    }
+    &__item:not(:last-child)::after {
+        width: 1.5px;
+        height: 16px;
+        background: #D8D5D5;
+        content: "";
+        margin: 0 25px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .menu {
+        font-weight: 1.8rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .menu {
+        margin: 10px 0 11px 0;
+        &__item:not(:last-child)::after {
+            height: 13px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu {
+        margin: 11px 0 10px 0px;
+    }
+}
+
+@media screen and (max-width:546px) {
+    .menu {
+        font-weight: 200;
+        &__item:not(:last-child)::after {
+            margin: 0 8px;
+        }
+    }
+}

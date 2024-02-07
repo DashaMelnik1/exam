@@ -1,0 +1,22 @@
+.artist {
+    padding: 90px 0 80px;
+    background-color: $bg-color;
+    &__photo {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 398px;
+        height: 398px;
+        object-fit: cover;
+    }
+    &__title {
+        font-size: 7rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 35px 0 60px;
+    }
+}

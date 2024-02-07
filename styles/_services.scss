@@ -1,0 +1,38 @@
+.services {
+    padding: 90px 0;
+    background: $secondary-color;
+    &__text {
+        max-width: 1300px;
+        margin: 0 auto;
+        color: $text-color;
+        font-size: $about-font;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .services {
+        padding: 80px 0;
+        &__text {
+            max-width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .services {
+        padding: 80px 0;
+        &__text {
+            max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .services {
+        padding: 70px 0;
+        &__text {
+            max-width: 541px;
+        }
+    }
+}

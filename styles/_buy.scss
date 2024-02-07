@@ -1,0 +1,16 @@
+.buy {
+    background: $secondary-color;
+    padding: 90px 359px 90px 372px;
+}
+
+@media screen and (max-width:1500px) {
+    .buy {
+        padding: 80px 150px 80px 150px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .buy {
+        padding: 40px 20px 40px 20px;
+    }
+}

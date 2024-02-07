@@ -1,0 +1,14 @@
+.form {
+    max-width: 1000px;
+    padding: 100px 120px 100px 120px;
+    background: $bg-color;
+    border-radius: 30px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media screen and (max-width:1024px) {
+    .form {
+        padding: 80px 68px 80px 67px;
+    }
+}

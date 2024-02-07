@@ -1,0 +1,7 @@
+.button {
+    @include button($secondary-color);
+    margin: 40px auto 0;
+    &:hover {
+        color: #000
+    }
+}

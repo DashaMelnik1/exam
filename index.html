@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Макарук Виталий</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/4079d14ef3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">МВ</a>
+            </div>
+            <nav class="menu">
+                <a class="menu__item" href="#services">Услуги</a>
+                <a class="menu__item" href="#portfolio">Портфолио</a>
+                <a class="menu__item" href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="artist">
+            <img class="artist__photo" src="img/artist.jpg" alt="Художник Макарук Виталий">
+            <h1 class="artist__title">Макарук Виталий</h1>
+            <p class="artist__text">Я художник</p>
+            <a href="#buy" class="button">Заказать</a>
+        </section>
+        <section class="services" id="services">
+            <p class="services__text">На сайте Вы найдете большой выбор картин! Благодаря предварительной консультации можно увидеть как будет выглядеть ваша работа: выбрать материал холста, размеры и технику картины! Вы найдете: копии работ всемирно известных мастеров, картины
+                маслом по вашим фото, пейзажи и натюрморты. Я предлагаю картины, которые будут хранится долгие годы и станут семйной реликвией! Уникальный подарок для человека, которого вы цените.</p>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="filters">
+                <div class="filters-sort">
+                    <label class="filters-sort__label" for="sort">Сортировка:</label>
+                    <select class="filters-sort__select" name="sort" id="sort">
+                      <option selected value="alphabet">По алфавиту</option>
+                      <option value="expensive">Сначала дорогие</option>
+                      <option value="cheap">Сначала дешевые</option>
+                      <option value="rating">Рейтинг</option>
+                    </select>
+                </div>
+            </div>
+            <div class="site-search">
+                <input class="site-search__input" type="search" id="search-input">
+                <button class="site-search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+        <p id="nothing-found" class="nothing-found">Ничего не найдено</p>
+
+        <section class="portfolio__items"></section>
+
+        <section id="buy" class="buy">
+            <form class="form">
+                <h2 class="hiding-title">Купить картину маслом</h2>
+                <p class="text">Напишите, какую картину вы хотите у меня заказать</p>
+                <label for="userEmail" class="user-title">Email:</label>
+                <input class="user-input" type="email" name="email" id="userEmail" placeholder="Ваш email">
+                <label for="userName" class="user-title">Имя:</label>
+                <input class="user-input" type="text" name="name" id="userName" placeholder="Ваше имя">
+                <p class="text">Выберите жанр живописи</p>
+                <div class="indent">
+                    <input class="input" type="radio" name="genre" id="portrait" value="portrait" checked>
+                    <label class="title-radio" for="portrait">Портрет</label>
+                </div>
+                <div class="indent">
+                    <input class="input" type="radio" name="genre" id="landscape" value="landscape">
+                    <label class="title-radio" for="landscape">Пейзаж</label>
+                </div>
+                <div class="indent">
+                    <input class="input" type="radio" name="genre" id="still-life" value="still-life">
+                    <label class="title-radio" for="still-life">Натюрморт</label>
+                </div>
+                <input class="button" type="submit" id="userSubmit" value="Заказать картину">
+            </form>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <h2 class="hiding-title">Свяжитесь со мной</h2>
+        <ul class="list">
+            <li>
+                <a class="list__connect" href="tel:+375297282176">+375(29)728-21-76</a>
+            </li>
+            <li>
+                <a class="list__connect" href="makarukvital@gmail.com">makarukvital@gmail.com</a>
+            </li>
+        </ul>
+        <p class="footer__time">Работаю ежедневно с 9.00 до 18.00</p>
+        <div class="social-networks">
+            <a class="social-networks__link" href="https://vk.com/id254925908"><i class="fa-brands fa-vk"></i></a>
+            <a class="social-networks__link" href="https://www.instagram.com/makarukvitaliy/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <template class="item-template">
+        <div class="shop-item">
+            <img class="shop-item__img" src="">
+            <div class="shop-item__content">
+                <h1 class="shop-item__h"></h1>
+                <p class="shop-item__p"></p>
+            </div>
+            <div class="shop-item__footer">
+                <span class="shop-item__price"></span>
+                <div class="shop-item__rating"></div>
+            </div>
+        </div>
+    </template>
+
+    <a href="#" class="up"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

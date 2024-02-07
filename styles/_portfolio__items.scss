@@ -1,0 +1,12 @@
+.portfolio__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+@media screen and (max-width:1200px) {
+    .portfolio__items {
+        flex-direction: column;
+        align-items: center;
+    }
+}

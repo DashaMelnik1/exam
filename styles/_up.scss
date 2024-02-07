@@ -1,0 +1,17 @@
+.up {
+    position: fixed;
+    font-size: 3rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    right: 20px;
+    bottom: 19px;
+    cursor: pointer;
+    color: $text-color;
+    background-color: $secondary-color;
+    transition: .5s;
+    &:hover {
+        transform: scale(1.3);
+    }
+}

@@ -1,0 +1,11 @@
+.user-input {
+    font-size: 2rem;
+    color: #9d9d9d;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 25px;
+    padding-left: 35px;
+    &:focus {
+        outline-color: $secondary-color;
+    }
+}

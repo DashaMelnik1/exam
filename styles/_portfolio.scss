@@ -1,0 +1,33 @@
+.portfolio {
+    padding: 90px 359px 30px 372px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-color;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: $bg-color;
+        padding: 10px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .portfolio {
+        padding: 70px 100px 20px 100px;
+        &__items {
+            padding: 10px 50px 50px 50px;
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    .portfolio {
+        padding: 70px 35px 20px 35px;
+        &__items {
+            padding: 10px 20px 10px 20px;
+        }
+    }
+}
