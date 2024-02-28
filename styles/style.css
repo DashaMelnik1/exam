@@ -409,9 +409,14 @@ a {
   color: #fff;
   background-color: #586f4a;
   transition: 0.5s;
+  display: none;
 }
 .up:hover {
   transform: scale(1.3);
+}
+
+.show {
+  display: block;
 }
 
 .shop-item {

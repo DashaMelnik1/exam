@@ -221,4 +221,16 @@ sortControl.addEventListener("change", (event) => {
     renderItems(currentState);
 });
 
-//хотела бы сделать что бы кнопка проктрутки "вверх" ,загаралась после прокрутки на какую нибудь высоту. не знаю как это сделать, в ютубе не понятно
+const btnUp = document.querySelector(".up");
+let lastScrollTop = document.documentElement.scrollTop;
+
+window.addEventListener('scroll', function() {
+    const scrollTopPosition = document.documentElement.scrollTop;
+
+    if (scrollTopPosition > lastScrollTop || scrollTopPosition === 0) {
+        btnUp.classList.remove('show');
+    } else {
+        btnUp.classList.add('show');
+    }
+    lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+})

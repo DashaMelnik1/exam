@@ -11,7 +11,12 @@
     color: $text-color;
     background-color: $secondary-color;
     transition: .5s;
+    display: none;
     &:hover {
         transform: scale(1.3);
     }
+}
+
+.show {
+    display: block;
 }
